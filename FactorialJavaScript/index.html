@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Factorial</title>
+    <script type="text/javascript">
+        var numero = parseInt(prompt("Introduce un numero"));
+        var fac = 1;
+        function factorial(numero) {
+            if (numero==0) return;
+            fac *= numero;
+            return factorial(numero-1);
+        }
+
+        factorial(numero);
+        console.log(fac);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
